@@ -1104,8 +1104,7 @@ section.contact-w3l button.btn.btn-primary:hover {
 	text-indent: 100%;
 	white-space: nowrap;
 	background: rgba(0, 0, 0, 0) url(../images/up-arrow.svg) no-repeat center 50%;
-	background-size:70%;
-	border:1px solid #fff;
+	background-size:100%;
 	visibility: hidden;
 	opacity: 0;
 	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -1128,8 +1127,11 @@ section.contact-w3l button.btn.btn-primary:hover {
 	z-index: 999;
 }
 .cd-top:hover {
-	background-color: #000;
-	opacity: 1;
+	border-radius: 50%;
+	border-color: #fbb216;
+	border-style: solid;
+	opacity: 100;
+	border-width: 4px;
 }
 @media only screen and (min-width: 768px) {
 	.cd-top {
@@ -1446,16 +1448,16 @@ nav.navbar.navbar-default.navbar-fixed-top {
     padding: 9px 10px;
     background-color: transparent;
     background-image: none;
-    border: 3px solid #0096e6!important;
+    border: 3px solid #fbb216!important;
     border-radius: 4px;
     margin: 7px auto 0;
     display: block;
 }
 .navbar-toggle:focus,.navbar-toggle:hover {
-	 background-color:#0096e6!important;
+	 background-color:#fbb216!important;
 } 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color:#0096e6!important;
+    background-color:#fbb216!important;
 }
 .navbar-toggle:focus .icon-bar,.navbar-toggle:hover .icon-bar {
 	background-color:#fff!important;
