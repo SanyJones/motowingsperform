@@ -55,7 +55,7 @@ img {
 /*-- /reset code --*/
 body {
 	font-family: 'Raleway', sans-serif;
-	color:#999;
+	color:#09121b;
 }
 /*-- navigation --*/
 nav.navbar.navbar-default.navbar-fixed-top {
@@ -82,18 +82,18 @@ nav.navbar.navbar-default.navbar-fixed-top {
     padding:0px 15px;
 	overflow:hidden;
 	position:relative;
-	font-size:17px;
+	font-size:20px;
 	font-weight:200;
 	color:#fff;
 	margin-top:14px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'mwp_font', sans-serif;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #fbb216;
     background-color:transparent;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #fbb216;
+    color: white;
     background-color:transparent;
 }
 /* Effect  */
@@ -182,43 +182,44 @@ section.banner-w3ls .header {
     z-index: 999;
     width: 100%;
     text-align: center;
-    top: 47%;
+    top: 43%;
 }
 a.logo-w3ls {
     display: inline-block;
 	text-decoration:none;
-	width: 640px;
-    height: 100px;
+	width: 750px;
+    height: 80px;
     background-color: rgba(0,0,0,0.7);
 }
 a.logo-w3ls h1 {
-	font-size: 45px;
+	font-size: 66px;
 	text-align: center;
 	font-weight: normal;
-	letter-spacing: 2px;
-	margin: 24px 0 0 45px;
-	color: #fbb216;
+	letter-spacing: 7px;
+	margin: 4px 0 0 0px;
 	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
+	color: #fbb216;
+	transform: scale(0.75, 0.5);
+	font-family: 'mwp_font', 'Impact';
 }
 /*-- /banner section --*/
 /*-- about section --*/
 section.about-agileits .about-agileinfo h2 {
 	font-size:40px;
-	font-weight:normal;
+	font-weight:bold;
 	padding-bottom:20px;
-	color:#23a7f1;
+	color:#09121b;
 	text-transform:uppercase;
 	font-family: 'Open Sans', sans-serif;
 }
 section.about-agileits .about-agileinfo p {
 	font-size:16px;
 	font-weight:normal;
-	line-height:30px;
-	padding-bottom:20px;
+	line-height:24px;
+	padding-bottom:10px;
 }
 section.about-agileits .about-agileinfo {
-    padding: 78px 20px;
+    padding: 45px 20px;
 }
 .cover-slider__wrap {
 	position: relative;
@@ -368,7 +369,7 @@ section.address-agileits p a {
 	text-align: center;
 	position: relative;
 	z-index: 1;
-	color: #fff;
+	color: #fbb216;
 }
 .hi-icon:after {
 	position: absolute;
@@ -425,8 +426,8 @@ section.address-agileits p a {
 	opacity: 1;
 }
 .addr-w3-agile:hover .hi-icon-effect-1b .hi-icon {
-	background: rgba(255,255,255,1);
-	color: #16263f;
+	background: #fbb216;
+	color: white;
 } 
 .addr-w3-agile:hover .hi-icon:after {
 	-webkit-transform: scale(1);
@@ -442,8 +443,8 @@ section.service-wthree {
 }
 section.service-wthree h3.text-center {
 	font-size:40px;
-	font-weight:normal;
-	color:#23a7f1;
+	font-weight:bold;
+	color:#1b1209;
 	padding-bottom:20px;
 	text-transform:uppercase;
 	font-family: 'Open Sans', sans-serif;
@@ -456,7 +457,7 @@ section.service-wthree p.text-center {
 section.service-wthree h5.text-center {
     font-size: 22px;
     font-weight: normal;
-    color:#23a7f1;
+    color:#1b1209;
     padding-bottom: 20px;
     text-transform:capitalize;
 	font-family: 'Open Sans', sans-serif;
@@ -509,7 +510,7 @@ section.testimonial {
 section.testimonial h3.text-center {
 	font-size:40px;
 	font-weight:normal;
-	color:#fff;
+	color:#fbb216;
 	text-transform:uppercase;
 	padding-bottom:80px;
 	font-family: 'Open Sans', sans-serif;
@@ -579,8 +580,8 @@ section.portfolio-wthree {
 }
 section.portfolio-wthree h3.text-center {
 	font-size:40px;
-	font-weight:normal;
-	color:#fff;
+	font-weight:bold;
+	color:#09121b;
 	text-transform:uppercase;
 	padding-bottom:20px;
 	font-family: 'Open Sans', sans-serif;
@@ -589,7 +590,7 @@ section.portfolio-wthree p.text-center {
 	font-size:16px;
 	font-weight:normal;
 	padding-bottom:40px;
-	color:#fff;
+	color:#09121b;
 }
 .tabs {
     position: relative;
@@ -616,7 +617,7 @@ section.portfolio-wthree p.text-center {
 	top: 120px;
 }
 .tabs label {
-	background: #16263f;
+	background: #09121b;
 	font-size: 15px;
 	font-weight:normal;
 	line-height:55px;
@@ -647,7 +648,7 @@ section.portfolio-wthree p.text-center {
 	height: 100%;
 }
 .tabs input:hover + label {
-	background: #1e3f73;
+	background: #1c3854;
 }
 .tabs label:first-of-type {
     z-index: 4;
@@ -662,12 +663,12 @@ section.portfolio-wthree p.text-center {
     z-index: 1;
 }
 .tabs input:checked + label {
-    background:#1e3f73;
+    background:#1c3854;
     z-index: 7;
 	color:#fff;
 }
 .tabs input:checked:hover + label {
-	background: #1e3f73;
+	background: #1c3854;
 	color:#fff;
 	cursor:default;
 }
@@ -727,7 +728,7 @@ section.portfolio-wthree p.text-center {
 /*-- events section --*/
 section.event-agileinfo {
 	padding:100px 0;
-	background:#23a7f1;
+	background:#09121b;
 }
 section.event-agileinfo h3.text-center {
 	font-size:40px;
@@ -1010,7 +1011,7 @@ section.contact-w3l {
 section.contact-w3l h3.text-center {
 	font-size:40px;
 	font-weight:normal;
-	color:#fff;
+	color:#fbb216;
 	text-transform:uppercase;
 	padding-bottom:20px;
 	font-family: 'Open Sans', sans-serif;
@@ -1032,7 +1033,6 @@ input#name,input#phone,input#email,textarea#message {
 	margin-bottom:30px;
 }
 input#name:focus,input#phone:focus,input#email:focus,textarea#message:focus {
-	background-color: rgba(0, 0, 0, 1);
     border: 1px solid #fff;
 	color:#fff;	
 }
@@ -1055,8 +1055,8 @@ section.contact-w3l button.btn.btn-primary {
     font-weight: normal;
     color: #fff;
     display: block;
-    background-color: #23a7f1;
-    border-color: #23a7f1;
+    background-color: #fbb216;
+    border-color: #fbb216;
     outline: none;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -1066,8 +1066,8 @@ section.contact-w3l button.btn.btn-primary {
 }
 section.contact-w3l button.btn.btn-primary:hover {
 	color: #fff;
-    background-color:#000e25;
-	border-color:#000e25;
+    background-color:#09121b;
+	border-color:#09121b;
 }
 /*-- /contact section --*/
 /*-- footer --*/
@@ -2148,11 +2148,28 @@ section.contact-w3l button.btn.btn-primary {
     font-size: 13px;
 }
 }
-
-
-
-
-
-
+.logo-top-left {
+    position: fixed;
+    right: 0px;
+    left: 10px;
+    top: 8px;
+}
+@font-face {
+    font-family: 'mwp_font';
+    src: url('../fonts/mwpf.woff2') format('woff2'),
+         url('../fonts/mwpf.woff') format('woff');
+}
+#navbar{
+	letter-spacing : 1px;
+}
+section.about-agileits .about-agileinfo li {
+	font-size:16px;
+	font-weight:normal;
+	line-height:24px;
+	padding-bottom: 0px;
+}
+section.about-agileits {
+	background-color:#6C8A95;
+}
 
 /*-- /responsive design --*/
