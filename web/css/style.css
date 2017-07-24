@@ -444,7 +444,7 @@ section.service-wthree {
 section.service-wthree h3.text-center {
 	font-size:40px;
 	font-weight:bold;
-	color:#1b1209;
+	color:#09121b ;
 	padding-bottom:20px;
 	text-transform:uppercase;
 	font-family: 'Open Sans', sans-serif;
@@ -456,8 +456,8 @@ section.service-wthree p.text-center {
 }
 section.service-wthree h5.text-center {
     font-size: 22px;
-    font-weight: normal;
-    color:#1b1209;
+    font-weight: bold;
+    color:#09121b;
     padding-bottom: 20px;
     text-transform:capitalize;
 	font-family: 'Open Sans', sans-serif;
@@ -852,8 +852,8 @@ section.work-agileinfo {
 }
 section.work-agileinfo h3.text-center {
 	font-size:40px;
-	font-weight:normal;
-	color:#23a7f1;
+	font-weight:bold;
+	color:#09121b ;
 	text-transform:uppercase;
 	padding-bottom:20px;
 	font-family: 'Open Sans', sans-serif;
@@ -870,8 +870,8 @@ section.work-agileinfo a.work-agile {
 }
 section.work-agileinfo h5.text-center {
 	font-size:20px;
-	font-weight:normal;
-	color:#23a7f1;
+	font-weight:bold;
+	color:#09121b ;
 	text-transform:uppercase;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -954,34 +954,37 @@ figure.effect-moses img {
 }
 figure.effect-moses h4,
 figure.effect-moses p {
-	width: 50%;
+	width: 60%;
 	height: 50%;
-	border: 2px solid #fff;
+	border: 2px dashed white;
 }
 figure.effect-moses h4 {
 	line-height:53px;
-	width: 50%;
-	font-size:17px;
+	width: 60%;
+	font-size:20px;	
 	font-weight:normal;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'mwp_font', sans-serif;
 	height: 50%;
 	text-align: center;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(10px,10px,0);
 	transform: translate3d(10px,10px,0);
+	color: #fbb216;
 }
 figure.effect-moses p {
 	float: right;
     padding: 20px 0;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: normal;
     text-align: center;
+	font-family: 'mwp_font', sans-serif;
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: translate3d(-50%,-50%,0);
     transform: translate3d(-50%,-50%,0);
+	color: #fbb216;
 }
 figure.effect-moses:hover h4 {
 	-webkit-transform: translate3d(0,0,0);
