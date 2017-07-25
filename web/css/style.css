@@ -2176,5 +2176,8 @@ section.about-agileits .about-agileinfo li {
 section.about-agileits {
 	background-color:#C9D0E0;
 }
-
 /*-- /responsive design --*/
+
+.no-js #preloader, .oldie #preloader {
+  display: none;
+}

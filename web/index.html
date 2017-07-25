@@ -13,24 +13,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Car Hub Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- fonts -->
-<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-<!-- /fonts -->
-<!-- css files -->
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/viewbox.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/jQuery.lightninBox.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/service.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- /css files -->
+<link href="css/pace.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/pace.min.js"></script>
 <!-- js files -->
 <script src="js/modernizr.js"></script>
 <!-- /js files -->
 </head>
 <body>
+<div id="preloader"> 
+    <div id="loader"></div>
+</div>
 <!-- navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
 <div class="logo-top-left">
@@ -609,6 +601,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- /js for about section -->
 <!-- js for portfolio section -->
 <script src="js/jQuery.lightninBox.js"></script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- css files -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/viewbox.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/jQuery.lightninBox.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/service.css" rel="stylesheet" type="text/css" media="all" />
+<!-- /css files -->
+<script src="js/preloader.js"></script>
 <script type="text/javascript">
 $(".lightninBox").lightninBox();
 </script>
@@ -620,7 +622,6 @@ var myBgFader = $('.header').bgfader([
   'images/banner1.jpg',
   'images/banner2.jpg',
   'images/banner3.jpg',
-  'images/banner4.jpg',
 ], {
   'timeout': 3000,
   'speed': 3000,
