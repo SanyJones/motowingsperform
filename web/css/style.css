@@ -61,32 +61,64 @@ body {
 nav.navbar.navbar-default.navbar-fixed-top {
     background-color: #09121b;
     border-color: #fbb216;
-	height:50px;
+	height:70px;
 }
 .navbar-nav>li {
     float: left;
-    width: 185px;
     text-align: center;
 	position:relative;
 }
-.navbar-nav>li:nth-child(1):after, .navbar-nav>li:nth-child(2):after, .navbar-nav>li:nth-child(3):after, .navbar-nav>li:nth-child(4):after, .navbar-nav>li:nth-child(5):after {
+#primarynavbar.navbar-nav>li:nth-child(1):after {
 	position: relative;
-    content: '-';
+    content: '|';
     font-size: 20px;
     font-weight: bold;
-    right: -90px;
-    top: -25px;
+    right: -76px;
+    top: -26px;
 	color: #fbb216;
 }
-.navbar-nav>li>a {
+#primarynavbar.navbar-nav>li:nth-child(2):after {
+	position: relative;
+    content: '|';
+    font-size: 20px;
+    font-weight: bold;
+    right: -97px;
+    top: -26px;
+	color: #fbb216;
+}
+#primarynavbar.navbar-nav>li:nth-child(4),.navbar-nav>li:nth-child(5),.navbar-nav>li:nth-child(6),.navbar-nav>li:nth-child(7),.navbar-nav>li:nth-child(8):after {
+	display:none;
+}
+
+#primarynavbar.navbar-nav>li>a {
     padding:0px 15px;
 	overflow:hidden;
 	position:relative;
-	font-size:20px;
+	font-size:1.3rem;
 	font-weight:200;
 	color:#fff;
-	margin-top:14px;
-	font-family: 'mwp_font', sans-serif;
+	margin-left:0;
+	font-family: 'mwp2_font', sans-serif;
+}
+@media (max-width: 767px) {
+	#secondarynavbar{
+		display:none;
+	}
+	#primarynavbar.navbar-nav>li:nth-child(4),.navbar-nav>li:nth-child(5),.navbar-nav>li:nth-child(6),.navbar-nav>li:nth-child(7),.navbar-nav>li:nth-child(8):after {
+		display:inline;
+	}
+}
+#secondarynavbar.navbar-nav>li>a {
+    padding:0px 1rem;
+	overflow:hidden;
+	position:relative;
+	font-size:1.1rem;
+	font-weight:200;
+	color:#C9D0E0;
+	margin-top:-18px;
+	margin-left:90px;
+	margin-right:-90px;
+	font-family: 'mwp2_font', sans-serif;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #fbb216;
@@ -104,18 +136,18 @@ nav.navbar.navbar-default.navbar-fixed-top {
 .cl-effect-5 li a span {
 	position: relative;
 	display: inline-block;
-	-webkit-transition: -webkit-transform 0.3s;
-	-moz-transition: -moz-transform 0.3s;
-	transition: transform 0.3s;
 }
-.cl-effect-5 li a span::before {
+#primarynavbar.cl-effect-5 li a span::before {
 	position: absolute;
 	top: 100%;
 	content: attr(data-hover);
-	font-weight: 700;
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	text-decoration: white underline;
+}
+#secondarynavbar.cl-effect-5 li a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	text-decoration: #C9D0E0 underline;
 }
 .cl-effect-5 li.active a span,
 .cl-effect-5 li a:active span,
@@ -204,6 +236,9 @@ a.logo-w3ls h1 {
 }
 /*-- /banner section --*/
 /*-- about section --*/
+section.about-agileits {
+	padding:30px 0;
+}
 section.about-agileits .about-agileinfo h2 {
 	font-size:40px;
 	font-weight:bold;
@@ -224,8 +259,8 @@ section.about-agileits .about-agileinfo {
 .cover-slider__wrap {
 	position: relative;
 	width:100%;
-	height:500px;
-	margin:0 auto;
+	height:560px;
+	margin:-30px auto;
 	padding:0;
 	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
 }
@@ -963,7 +998,7 @@ figure.effect-moses h4 {
 	width: 60%;
 	font-size:20px;	
 	font-weight:normal;
-	font-family: 'mwp_font', sans-serif;
+	font-family: 'mwp2_font', sans-serif;
 	height: 50%;
 	text-align: center;
 	-webkit-transition: -webkit-transform 0.35s;
@@ -1442,7 +1477,7 @@ ul.nav.navbar-nav.cl-effect-5 {
 }
 nav.navbar.navbar-default.navbar-fixed-top {
     background-color: rgba(22, 38, 63, 0.51);
-    border-color: #e7e7e7;
+    border-color: #fbb216;
     height: 50px;
 }
 .navbar-toggle {
@@ -2156,13 +2191,60 @@ section.contact-w3l button.btn.btn-primary {
 .logo-top-left {
     position: fixed;
     right: 0px;
-    left: 10px;
+    left: 90px;
     top: 8px;
+}
+.mwp-tag-line {
+    position: fixed;
+    right: 0px;
+    left: 300px;
+    top: 44px;
+}
+.est-year {
+    position: fixed;
+    left: 292px;
+    top: 8px;
+	color:#fbb216;
+	text-align: center;
+    font-weight: normal;
+	top: 15px;
+	font-size: 30px;
+	transform: scale(0.75, 0.5);
+	font-family: 'mwp_font', 'Impact';
+}
+
+#mwp-logo-1-mob{
+	display:none;
+}
+@media (max-width: 767px) {
+	.logo-top-left {
+    position: fixed;
+    right: 0px;
+    left: 2px;
+    top: 8px;
+}
+#mwp-logo-1-mob{
+	display:inline;
+}
+#mwp-logo-1{
+	display:none;
+}
+#mwp-tag-line{
+	display:none;
+}
+#mwp-est-year p{
+	display:none;
+}
 }
 @font-face {
     font-family: 'mwp_font';
     src: url('../fonts/mwpf.woff2') format('woff2'),
          url('../fonts/mwpf.woff') format('woff');
+}
+@font-face {
+    font-family: 'mwp2_font';
+    src: url('../fonts/mwpf2.woff2') format('woff2'),
+         url('../fonts/mwpf2.woff') format('woff');
 }
 #navbar{
 	letter-spacing : 1px;
